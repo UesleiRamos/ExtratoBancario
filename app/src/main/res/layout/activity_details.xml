@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B49EE">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:layout_constraintGuide_begin="18dp" android:id="@+id/guideline_start"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/guideline_end" app:layout_constraintGuide_end="13dp"/>
+
+    <TextView
+        android:layout_width="215dp"
+        android:layout_height="29dp"
+        android:text="@string/nome_jose"
+        style="@style/fontResult"
+        android:layout_marginTop="20dp" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start" android:id="@+id/txtnome"
+        android:fontFamily="@font/helvetica_neue_light"/>
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@mipmap/logout"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:layout_width="47dp"
+        android:layout_height="13dp"
+        android:text="@string/conta"
+        style="@style/fontTitle"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/txtnome" android:layout_marginTop="28dp"
+        android:id="@+id/lblConta" android:fontFamily="@font/helvetica_neue"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="29dp"
+        android:text="@string/numero_conta"
+        style="@style/fontResult"
+        android:id="@+id/txtConta"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/lblConta" android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/lblSaldo"
+        android:layout_width="47dp"
+        android:layout_height="13dp"
+        android:text="@string/saldo"
+        style="@style/fontTitle" android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtConta"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"/>
+
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="184dp"
+        android:layout_height="29dp"
+        android:text="@string/valor_conta"
+        style="@style/fontResult" android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblSaldo"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"/>
+
+    <TextView
+        android:id="@+id/lblRecentes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingStart="18dp"
+        android:paddingTop="31dp"
+        android:paddingBottom="8dp"
+        android:text="Recentes"
+        android:textColor="#485465"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="530dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRecentes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

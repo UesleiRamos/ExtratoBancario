@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Extrato Bancario</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="bank">Bank</string>
+    <string name="nome_jose">Jose da Silva Teste</string>
+    <string name="conta">Conta</string>
+    <string name="numero_conta">2050 / 01.111222-4</string>
+    <string name="saldo">Saldo</string>
+    <string name="valor_conta">R$1.000,00</string>
+</resources>
