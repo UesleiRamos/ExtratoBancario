@@ -9,4 +9,14 @@
     <string name="numero_conta">2050 / 01.111222-4</string>
     <string name="saldo">Saldo</string>
     <string name="valor_conta">R$1.000,00</string>
+
+    <string name="valida_us">Favor, preencha o usuário.</string>
+    <string name="valida_senha">Favor, preencha a senha</string>
+    <string name="preencha_cpf_email">Favor, digite CPF ou e-mail valido!</string>
+    <string name="valida_senha_format">Preencha corretamente o formato de senha</string>
+
+    <string name="url_principal">https://bank-app-test.herokuapp.com</string>
+    <string name="url_login">https://bank-app-test.herokuapp.com/api/login</string>
+    <string name="url_dados">https://bank-app-test.herokuapp.com/api/statements/%s</string>
+    <string name="recentes">Recentes</string>
 </resources>

@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#448AFF</color>
     <color name="btnLogin">#3B48EE</color>
-    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_title">#A8B4C4</color>
+    <color name="color_desc">#485465</color>
 </resources>

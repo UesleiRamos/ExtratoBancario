@@ -73,11 +73,11 @@
         android:id="@+id/lblRecentes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorWhite"
+        android:background="@android:color/white"
         android:paddingStart="18dp"
         android:paddingTop="31dp"
         android:paddingBottom="8dp"
-        android:text="Recentes"
+        android:text="@string/recentes"
         android:textColor="#485465"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,12 +85,14 @@
         app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDados"
         android:layout_width="0dp"
-        android:layout_height="530dp"
-        android:background="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblRecentes" />
+        app:layout_constraintTop_toBottomOf="@+id/lblRecentes"
+        tools:listitem="@layout/details_item"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
