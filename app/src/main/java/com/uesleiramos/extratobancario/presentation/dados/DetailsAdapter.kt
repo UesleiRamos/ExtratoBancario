@@ -1,17 +1,19 @@
-package com.uesleiramos.extratobancario.view
+package com.uesleiramos.extratobancario.presentation.dados
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.uesleiramos.extratobancario.R
-import com.uesleiramos.extratobancario.model.Dados
+import com.uesleiramos.extratobancario.data.response.model.Dados
 import kotlinx.android.synthetic.main.details_item.view.*
 
 class DetailsAdapter(val dados: List<Dados>) : RecyclerView.Adapter<DetailsAdapter.DetailsViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailsViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.details_item, parent, false)
-        return DetailsViewHolder(itemView)
+        return DetailsViewHolder(
+            itemView
+        )
     }
 
     override fun getItemCount() = dados.count()

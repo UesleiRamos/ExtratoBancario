@@ -2,11 +2,13 @@ package com.uesleiramos.extratobancario.util
 
 import android.content.Context
 import android.widget.EditText
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import com.uesleiramos.extratobancario.R
 
-class Util {
+object Util {
     @Throws(Exception::class)
-    fun validaUs(edt: EditText, context: Context): Boolean {
+    fun validaUs(edt: TextInputEditText, context: Context): Boolean {
         if (edt.text.toString().isEmpty()) {
             edt.error = context.resources.getString(R.string.valida_us)
             return false
@@ -29,7 +31,7 @@ class Util {
     /**
      * Validando senha
      */
-    fun validaSenha(edt: EditText, context: Context): Boolean {
+    fun validaSenha(edt: TextInputEditText, context: Context): Boolean {
         if(edt.text.toString().isEmpty()) {
             edt.error = context.resources.getString(R.string.valida_senha)
             return false
