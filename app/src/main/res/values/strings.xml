@@ -19,4 +19,8 @@
     <string name="url_login">https://bank-app-test.herokuapp.com/api/login</string>
     <string name="url_dados">https://bank-app-test.herokuapp.com/api/statements/%s</string>
     <string name="recentes">Recentes</string>
+
+    <string name="language_pt">pt</string>
+
+
 </resources>

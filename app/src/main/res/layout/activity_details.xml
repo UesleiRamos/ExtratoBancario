@@ -18,15 +18,17 @@
         android:layout_height="wrap_content" android:id="@+id/guideline_end" app:layout_constraintGuide_end="13dp"/>
 
     <TextView
-        android:layout_width="215dp"
-        android:layout_height="29dp"
-        android:text="@string/nome_jose"
+        android:id="@+id/txtnome"
         style="@style/fontResult"
-        android:layout_marginTop="20dp" app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start" android:id="@+id/txtnome"
-        android:fontFamily="@font/helvetica_neue_light"/>
+        android:layout_width="215dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/helvetica_neue_light"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/btnLogout"
         android:layout_width="27dp"
         android:layout_height="27dp"
         android:src="@mipmap/logout"
@@ -35,39 +37,43 @@
         tools:ignore="ContentDescription"/>
 
     <TextView
-        android:layout_width="47dp"
-        android:layout_height="13dp"
-        android:text="@string/conta"
+        android:id="@+id/lblConta"
         style="@style/fontTitle"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:text="@string/conta"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/txtnome" android:layout_marginTop="28dp"
-        android:id="@+id/lblConta" android:fontFamily="@font/helvetica_neue"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtnome" />
+
     <TextView
-        android:layout_width="300dp"
-        android:layout_height="29dp"
-        android:text="@string/numero_conta"
-        style="@style/fontResult"
         android:id="@+id/txtConta"
+        style="@style/fontResult"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/lblConta" android:layout_marginTop="6dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/lblConta" />
 
     <TextView
         android:id="@+id/lblSaldo"
+        style="@style/fontTitle"
         android:layout_width="47dp"
-        android:layout_height="13dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
         android:text="@string/saldo"
-        style="@style/fontTitle" android:layout_marginTop="21dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtConta"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start"/>
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/txtConta" />
 
     <TextView
         android:id="@+id/txtSaldo"
+        style="@style/fontResult"
         android:layout_width="184dp"
-        android:layout_height="29dp"
-        android:text="@string/valor_conta"
-        style="@style/fontResult" android:layout_marginTop="7dp"
-        app:layout_constraintTop_toBottomOf="@+id/lblSaldo"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/lblSaldo" />
 
     <TextView
         android:id="@+id/lblRecentes"
@@ -87,12 +93,27 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerDados"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblRecentes"
-        tools:listitem="@layout/details_item"/>
+        tools:listitem="@layout/details_item" />
+
+    <ProgressBar
+        android:id="@+id/detalhe_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="33dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
