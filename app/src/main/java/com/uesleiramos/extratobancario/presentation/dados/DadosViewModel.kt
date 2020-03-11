@@ -6,7 +6,6 @@ import com.uesleiramos.extratobancario.data.ApiService
 import com.uesleiramos.extratobancario.data.response.StatementsResponse
 import com.uesleiramos.extratobancario.data.response.model.Dados
 import com.uesleiramos.extratobancario.data.response.model.Login
-import com.uesleiramos.extratobancario.util.Util
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

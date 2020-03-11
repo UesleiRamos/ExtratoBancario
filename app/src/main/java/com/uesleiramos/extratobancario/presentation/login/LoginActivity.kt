@@ -34,10 +34,7 @@ class LoginActivity : AppCompatActivity() {
                 if (it?.userId != null) {
                     SharedPrefManager.getInstance(this).saveUser(editUser.text.toString())
                     startActivity(
-                        DetailsActivity.getStartIntent(
-                            this@LoginActivity,
-                            it
-                        )
+                        DetailsActivity.getStartIntent(this@LoginActivity,it)
                     )
                     finish()
                 }
